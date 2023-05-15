@@ -218,13 +218,8 @@ main {
   height: 775px;
   background: #202023;
 }
-main img {
-  width: 65%;
-  justify-content: center;
-  align-items: center;
-}
 main h1 {
-  width: 165px;
+  text-align: center;
   height: 77px;
   font-family: "Inter";
   font-style: normal;
@@ -239,8 +234,7 @@ main p {
   font-weight: 800;
   font-size: 26px;
   line-height: 31px;
-  align-items: center;
-  margin-bottom: 0;
+  text-align: center;
 }
 main button {
   background: #B47B48;
@@ -253,14 +247,41 @@ main button {
   line-height: 31px;
   color: #FFFFFF;
   padding: 5px 30px 5px 30px;
+  margin-left: 98px;
+  margin-top: 9px;
+  margin-bottom: 7px;
 }
 main .menu {
   width: 328px;
   height: 250px;
   border: 1px solid #FFFFFF;
-}
-main .menus {
   display: flex;
+  justify-content: end;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+}
+main .menu img {
+  position: absolute;
+}
+main .M:nth-of-type(2) img {
+  top: -25px;
+}
+main .M:nth-of-type(1) img {
+  top: 20px;
+}
+main .M:nth-of-type(3) img {
+  top: -20px;
+}
+main .M:nth-of-type(4) img {
+  top: -2px;
+}
+main .Menu {
+  display: flex;
+  width: 873px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
